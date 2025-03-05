@@ -1,5 +1,5 @@
 # My Graphite Keyboard Layout
-I decided to learn the **Graphite** keyboard layout and this is the **Kanata** config I ended up creating for my ***ThinkPad t480s*** laptop. *Part of my [dotfiles](https://github.com/ngosi/.dotfiles) repo.*
+I decided to learn the **Graphite** keyboard layout and this is the **Kanata** config I ended up creating on my ***ThinkPad t480s*** laptop. *Part of my [dotfiles](https://github.com/ngosi/.dotfiles) repo.*
 
 ## Features
 - Toggleable Qwerty Layout
@@ -26,6 +26,7 @@ I decided to learn the **Graphite** keyboard layout and this is the **Kanata** c
     lctl wkup lmet lalt           spc            ralt prnt rctl pgup up   pgdn
                                                                 left down rght
 ```
+**Kanata** key names can be found [here](https://github.com/jtroo/kanata/blob/main/parser/src/keys/mod.rs).
 
 ## Layers:
 
@@ -53,7 +54,7 @@ Three top-right keys are responsible for main layer switching:
     _    _    _    _              _              _    _    _    _    _    _
                                                                 _    _    _
 ```
-This is what I change from the vanilla layer to get **Graphite** layout. I like to keep the symbols mostly the same as in **Qwerty**.
+This is what I change from the vanilla layer to get the **Graphite** layout. I like to keep the symbols mostly the same as in **Qwerty**.
 
 ### **Home Row**
 ```
@@ -65,7 +66,7 @@ This is what I change from the vanilla layer to get **Graphite** layout. I like 
     _    _    _    @md3           _              @md4 _    _    _    _    _
                                                                 _    _    _
 ```
-This is what I change from the vanilla layer to get my home row mods and other custom mod keys. I am using **GASC** home row mods which means the order is *Meta*, *Alt*, *Shift*, and then *Ctrl*.
+This is what I change from the vanilla layer to get my home row mods and other custom mod keys. I am using **[GASC](https://precondition.github.io/home-row-mods#gasc)** home row mods which means the order is *Meta*, *Alt*, *Shift*, and then *Ctrl*.
 - *hr1-8:*
     * **Tap** = regular key
     * **Hold** = modifier key
@@ -119,8 +120,8 @@ Provides easy access to navigation keys, as well as other useful keys. Does not 
                                                                 _    _    _
 ```
 Numpad with some custom keys.
-- `\+` shifts to `-`
-- `\*` shifts to `/`
+- `+` shifts to `-`
+- `*` shifts to `/`
 - `^` shifts to `%`
 - `.` shifts to `,`
 - *ch1-8:* Random binary chord config I found in Kanata docs that I never use.
@@ -159,7 +160,7 @@ Function layer with easy access to F11 *(fullscreen toggle)* and F13-24 while us
     _    _    _    _              _              _    _    _    _    _    _
                                                                 _    _    _
 ```
-Think of this layer as like a mask into the opposite layout for those six keys on your right hand. Most useful when navigating in **NeoVim** while using **Graphite** layout.
+Think of this layer as a mask into the opposite layout for those six keys on your right hand. Most useful when navigating in **NeoVim** while using **Graphite** layout.
 - If *graphite* then `hjkl;'`
 - If *qwerty* then `yhaei;`
 
@@ -175,14 +176,15 @@ Think of this layer as like a mask into the opposite layout for those six keys o
                                                                 _    _    _
 ```
 This is what I use when watching YouTube while using **Graphite** layout.  
-`f` is for fullscreen.
+`f` key is used for fullscreen.
 
 ![browser-extension.avif](assets/browser-extension.avif)
 
 ## External Config
 - Whenever the layout is switched a script is run that changes the directional keymaps for my *Hyprland*, *Tmux*, and *Rofi* configs.
-    * The idea behind the script is to have a patch file generated beforehand using `git diff` that then is applied using the script to change the config.
-    * The script can be found [here](https://github.com/ngosi/.dotfiles/blob/main/scripts/graphite2qwerty.sh).
+    * The idea behind the script is to have a patch file generated beforehand using `git diff` that is then applied by the script.
+    * Script file can be found [here](https://github.com/ngosi/.dotfiles/blob/main/scripts/graphite2qwerty.sh).
+    * Patch file can be found [here](https://github.com/ngosi/.dotfiles/blob/main/patches/graphite2qwerty.patch).
 - *kanata.service* makes it, so you don't have to manually launch **Kanata** every system start.
 - *zippy.txt* has zippy chords for frequently used text. Mine looks something like this:
 ```txt
@@ -199,7 +201,7 @@ fi v	/home/username/Videos/
 fi .	/home/username/.dotfiles/
 fi m	/home/username/Music/
 ```
-- I have a few aliases set up for convenience:
+- I have a few **Zsh** aliases set up for convenience:
 ```zsh
 # Kanata
 alias kn="kanata -c ~/kanata/kanata.kdb --log-layer-changes"
