@@ -19,7 +19,7 @@ I decided to learn the **Graphite** keyboard layout and this is the **Kanata** c
 ## **Vanilla Laptop Keyboard**
 ```
     esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12 home end  ins  del
-    grv  1    2    3    4    5    6    7    8    9    0    min  eql       bspc
+    grv  1    2    3    4    5    6    7    8    9    0    -    =         bspc
     tab       q    w    e    r    t    y    u    i    o    p    [    ]    \
     caps      a    s    d    f    g    h    j    k    l    ;    apos      ent
     lsft      z    x    c    v    b    n    m    ,    .    /              rsft
@@ -105,7 +105,7 @@ This is what I change from the vanilla layer to get my home row mods and other c
 Provides easy access to navigation keys, as well as other useful keys. Does not remove access to modifier keys on right side in order to allow for things like highlight or jump by word.
 - *cw:* Caps-word key to capitalize the next typed word.
 - *tb1:* **Ctrl+Tab** for easy access when changing tabs in web browser. *(tb2 in custom nav layer)*
-- Access to useful keys like enter and tab, as well as backspace and delete.
+- Access to useful keys like enter equal and tab, as well as backspace and delete.
 - Access to media keys as well as brightness keys
 - Access to some minorly useful mouse keys as well as the regular lock keys just in case.
 
@@ -113,9 +113,9 @@ Provides easy access to navigation keys, as well as other useful keys. Does not 
 ```
     _    _    _    _   _   _   _   _   _   _   _   _   _   _    _    _    _
     _    @ch8 @ch4 @ch2 @ch1 _    _    _    @ch8 @ch4 @ch2 @ch1 _         _
-    _         _    _    _    _    _    eql  kp7  kp8  kp9  @+   _    _    _
+    _         _    _    _    _    _    =    kp7  kp8  kp9  @+   _    _    _
     _         _    _    _    _    _    kp0  kp4  kp5  kp6  @*   _         _
-    _         _    _    _    _    _    @.   kp1  kp2  kp3  @^             eql
+    _         _    _    _    _    _    @.   kp1  kp2  kp3  @^             _
     _    _    _    bspc           _              _    _    _    _    _    _
                                                                 _    _    _
 ```
@@ -132,7 +132,7 @@ Numpad with some custom keys.
     _    _    _    _    _    _    _    _    _    _    _    _    _         _
     _         _    _    @~   @&   @!   @#   @|   grv  _    _    _    _    _
     _         @<   [    @{   @op  -    @_   @cp  @}   ]    @>   _         _
-    _         _    _    _    \    @$   @@   @%   _    _    _              _
+    _         =    _    _    \    @$   @@   @%   _    _    =              _
     _    _    _    bspc           _              _    _    _    _    _    _
                                                                 _    _    _
 ```
